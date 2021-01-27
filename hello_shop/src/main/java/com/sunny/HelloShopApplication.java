@@ -1,4 +1,4 @@
-package com.sunny.hello_shop;
+package com.sunny;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HelloShopApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(HelloShopApplication.class, args);
 	}
 

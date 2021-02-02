@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 
 @Data
@@ -31,4 +32,6 @@ public class Item {
 //    private List<OrderItem> orderItems = new ArrayList<>();
 // 주문 상품 -> 상품으로 조회할 일은 많지만 상품 -> 주문 상품을 참조 할 일은 거의 없음. 그래서 다대일 단방향 관계로만 설정.
 
+    @ManyToMany(mappedBy = "items")
+    private List<Category> categories = new ArrayList<>();
 }

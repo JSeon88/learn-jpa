@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 
 @Entity
 @Data
-public class Member {
+public class Member extends BaseEntity{
 
     @Id
     @GeneratedValue
